@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Барный приговор</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- <div id="some_block">+</div> -->
+   <div id="header">Шапка</div>
+   <ul id="nav">
+    <li onclick="add_elem()">Добавить напитки</li>
+    <li onclick="buy_drink()">Сделать заказ</li>
+    <li onclick="show_array()">Добавить коктейли</li>
+   </ul>
+   <div id="right_aside">
+    Левая часть<br>соберите себе коктейль<br><br>
+    
+    <!-- выбор основы -->
+    <select name="alco_1" id="alco_1">
+        <Option disabled selected>Выберите основу  </Option>
+        <option value="виски">Виски</option>
+        <option value="джин">Джин</option>
+        <!-- Позже добавить надо пару пунктов -->
+    </select><br><br>
+
+    <!--Пара рецептов: 
+        Виски-кола: виски, кола, лимон, лёд
+        Джин-тоник: джин, тоник, лимон, лайм, мята -->
+
+    выбор второго ингредиента<br>
+
+    <select name="alco_2" id="alco_2">
+        <Option disabled selected>Выберите ингредиент  </Option>
+        <Option value="кола">Кола</Option>
+        <Option value="тоник">Тоник</Option>
+        <!-- Позже добавить надо пару пунктов -->
+    </select><br><br>
+
+    выбор доп. ингредиента<br>
+
+    <select name="alco_3" id="alco_3">
+        <Option disabled selected>Выберите ингредиент  </Option>
+        <Option value="лимон">Лимон</Option>
+        <Option value="лайм">Лайм</Option>
+        <Option value="мята">Мята</Option>
+        <Option value="лёд">Лёд</Option>
+        
+    </select><br><br>
+
+    выбор доп. ингредиента<br>
+
+    <select name="alco_4" id="alco_4">
+        <Option disabled selected>Выберите ингредиент  </Option>
+        <Option value="лимон">Лимон</Option>
+        <Option value="лайм">Лайм</Option>
+        <Option value="мята">Мята</Option>
+        <Option value="лёд">Лёд</Option>
+        
+    </select><br><br>
+   </div>
+
+   <div id="main">
+    <p style="text-align: center;">Центральная часть</p>
+    <img src="img/Component 9.png" alt="Изображение напитка" class="img_drink">
+    <p style="text-align: center;" class="res" id="res">Тут будет заказ</p>
+   </div>
+
+   <div id="left_aside">
+
+    Правая часть<br> выберите готовый коктейль<br><br>
+
+    <select name="drink" id="drink">
+        <Option disabled selected>Выберите коктейль</Option>
+        <Option value="виски-кола">Виски-кола</Option>
+        <Option value="джин-тоник">Джин-тоник</Option>
+        <Option>Коктейль 3</Option>
+        <Option>Коктейль 4</Option>
+        </select>
+   </div>
+
+   <div id="footer">Подвал</div>
+
+   <script src="js/main.js"></script>
+</body>
+</html>
